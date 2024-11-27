@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa Deportiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Sportify</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carrito">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="banner">
+    <h1>¡Descubre tu fuerza!</h1>
+    <p>Viste tu mejor versión con nuestra ropa deportiva.</p>
+    <button onclick="verProductos()">Ver colección</button>
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Nuestras Categorías</h2>
+    <div class="grid">
+      <div class="categoria" data-aos="zoom-in">
+        <img src="images/hombres.jpg" alt="Hombres">
+        <p>Hombres</p>
+      </div>
+      <div class="categoria" data-aos="zoom-in">
+        <img src="images/mujeres.jpg" alt="Mujeres">
+        <p>Mujeres</p>
+      </div>
+      <div class="categoria" data-aos="zoom-in">
+        <img src="images/accesorios.jpg" alt="Accesorios">
+        <p>Accesorios</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p data-aos="fade-up">
+      Creamos ropa diseñada para atletas de alto rendimiento y amantes del deporte.
+    </p>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form data-aos="fade-right">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Sportify. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
